@@ -3,6 +3,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import AboutMe from "./featuring/about-me";
 import {Nav} from "react-bootstrap";
 import Navbar from 'react-bootstrap/Navbar';
+import Experiences from "./experiences/experiences";
 
 const NavBar = () => {
     return (
@@ -43,7 +44,7 @@ const Fullpage = () => (
                   <AboutMe/>
                 </div>
                 <div className="section">
-                  <p>Section 2</p>
+                  <Experiences/>
                 </div>
               </ReactFullpage.Wrapper>
           );
