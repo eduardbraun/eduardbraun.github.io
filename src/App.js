@@ -4,6 +4,7 @@ import AboutMe from "./featuring/about-me";
 import {Nav} from "react-bootstrap";
 import Navbar from 'react-bootstrap/Navbar';
 import Experiences from "./experiences/experiences";
+import Education from "./education/education";
 
 const NavBar = () => {
     return (
@@ -34,31 +35,34 @@ const NavBar = () => {
 const Fullpage = () => (
     <ReactFullpage
         //fullpage options
-        licenseKey = {'YOUR_KEY_HERE'}
-        scrollingSpeed = {1000} /* Options here */
+        licenseKey={'YOUR_KEY_HERE'}
+        scrollingSpeed={1000} /* Options here */
 
-        render={({ state, fullpageApi }) => {
-          return (
-              <ReactFullpage.Wrapper>
-                <div className="section">
-                  <AboutMe/>
-                </div>
-                <div className="section">
-                  <Experiences/>
-                </div>
-              </ReactFullpage.Wrapper>
-          );
+        render={({state, fullpageApi}) => {
+            return (
+                <ReactFullpage.Wrapper>
+                    <div className="section">
+                        <AboutMe/>
+                    </div>
+                    <div className="section">
+                        <Education/>
+                    </div>
+                    <div className="section">
+                        <Experiences/>
+                    </div>
+                </ReactFullpage.Wrapper>
+            );
         }}
     />
 );
 
 function App() {
-  return (
-    <div className="App">
-        <NavBar/>
-      <Fullpage/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <NavBar/>
+            <Fullpage/>
+        </div>
+    );
 }
 
 export default App;
