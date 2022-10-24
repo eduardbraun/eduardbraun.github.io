@@ -2,7 +2,6 @@ import './App.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import AboutMe from "./featuring/about-me";
 import {Nav} from "react-bootstrap";
-import Navbar from 'react-bootstrap/Navbar';
 import Experiences from "./experiences/experiences";
 import Education from "./education/education";
 

@@ -26,8 +26,37 @@ function Education() {
 
     return (
         <Container>
-            {brandon}
-            {gvc}
+            <h2>Education</h2>
+            <Row>
+                <Col>
+                    {brandon}
+                    {gvc}
+                </Col>
+            </Row>
+            <div className='mt-5'></div>
+            <h2>Skills</h2>
+            <Row>
+                <Col md={6}>
+                    <p className='text-start fs-6 pe-3'>
+                        <ul className='list-unstyled'>
+                            <li>Python (Django, Flask);</li>
+                            <li>Java (Android);</li>
+                            <li>C# (Web API, .NET 6, REST & gRPC services);</li>
+                            <li>SQL (PostgresSQL, MySQL, NoSQL);</li>
+                        </ul>
+                    </p>
+                </Col>
+                <Col md={6}>
+                    <p className='text-end fs-6 pe-3'>
+                        <ul className='list-unstyled'>
+                            <li>JavaScript (NodeJS, React, Angular);</li>
+                            <li>Azure (DevOps), AWS</li>
+                            <li>Containerization (Docker, Kubernetes)</li>
+                        </ul>
+                    </p>
+                </Col>
+            </Row>
+
         </Container>
     );
 }
